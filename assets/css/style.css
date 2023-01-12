@@ -600,14 +600,138 @@ section {
 .menu .box-container .box img {
   height: 10rem;
 }
-.menu .box-container .box h3 {
+.menu .box-container .box .conent h3 {
   font-size: 2rem;
   color: #130f40;
   padding-bottom: 0.5rem;
 }
-.menu .box-container .box .price {
+.menu .box-container .box .conent .price {
   font-size: 1.8rem;
   color: #27ae60;
+}
+
+.order .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.order .icons-container .icons {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  background: #f7f7f7;
+}
+.order .icons-container .icons img {
+  height: 10rem;
+}
+.order .icons-container .icons h3 {
+  font-size: 2.2rem;
+  color: #666;
+}
+.order form {
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.order form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.order form .flex .inputBox {
+  width: 49%;
+  padding: 0.7rem 0;
+}
+.order form .flex span {
+  font-size: 1.7rem;
+  color: #666;
+}
+.order form .flex input, .order form .flex textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-transform: none;
+  color: #130f40;
+}
+.order form .flex textarea {
+  height: 20rem;
+  resize: none;
+}
+.order form .flex .map {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+.blogs .box-container .box:hover .image h3 {
+  left: 1.5rem;
+  z-index: 1;
+}
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.4s;
+  position: relative;
+}
+.blogs .box-container .box .image h3 {
+  position: absolute;
+  top: 1rem;
+  left: -100%;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #130f40;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  transition: 0.4s;
+}
+.blogs .box-container .box .image h3 i {
+  padding-right: 0.5rem;
+  color: #27ae60;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.blogs .box-container .box .content {
+  padding: 1.5rem 2rem;
+  background: #f7f7f7;
+}
+.blogs .box-container .box .content .tags {
+  padding-bottom: 1rem;
+}
+.blogs .box-container .box .content .tags a {
+  font-size: 1.5rem;
+  color: #666;
+}
+.blogs .box-container .box .content .tags a i {
+  color: #27ae60;
+}
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+.blogs .box-container .box .content p {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem;
+  line-height: 2;
 }
 
 @media (max-width: 991px) {
@@ -647,6 +771,9 @@ section {
     top: 0;
     right: 0;
     width: 130%;
+  }
+  .order form .flex .inputBox {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {

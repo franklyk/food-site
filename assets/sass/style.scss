@@ -605,22 +605,150 @@ section{
         img{
             height: 10rem;
         }
-        h3{
-            font-size: 2rem;
-            color: $black;
-            padding-bottom: .5rem;
-        }
-        .price{
-            font-size: 1.8rem;
-            color: $green;
-
+        .conent{
+            h3{
+                font-size: 2rem;
+                color: $black;
+                padding-bottom: .5rem;
+            }
+            .price{
+                font-size: 1.8rem;
+                color: $green;
+            }
         }
     }
 }
 
+.order{
+    .icons-container{
+        @include grid(30rem);
+        margin-bottom: 1.5rem;
+        .icons{
+            border-radius: .5rem;
+            padding: 2rem;
+            text-align: center;
+            background: $light-bg;
+            img{
+                height: 10rem;
+            }
+            h3{
+                font-size: 2.2rem;
+                color: $light-color;
+            }
+        }
+    }
+    form{
+        background: $light-bg;
+        padding: 2rem;
+        border-radius: .5rem;
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .inputBox{
+                width: 49%;
+                padding: .7rem 0;
+            }
+            span{
+                font-size: 1.7rem;
+                color: $light-color;
+            }
+            input, textarea{
+                width: 100%;
+                margin-top: .5rem;
+                padding: 1rem 1.2rem;
+                border-radius: .5rem;
+                font-size: 1.6rem;
+                text-transform: none;
+                color: $black;
+            }
+            textarea{
+                height: 20rem;
+                resize: none;
+            }
+            .map{
+                height: 100%;
+                width: 100%;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
 
+.blogs .box-container{
+    @include grid(30rem);
+    .box{
+        overflow: hidden;
+        border-radius: .5rem;
 
+        &:hover{
+            .image{
+                img{
+                    transform: scale(1.2);
+                }
+                h3{
+                    left: 1.5rem;
+                    z-index: 1;
+                }
+            }
+        }
+        .image{
+            height: 25rem;
+            overflow: hidden;
+            width: 100%;
+            transition: 0.4s;
+            position: relative;
+            h3{
+                position: absolute;
+                top: 1rem;
+                left: -100%;
+                border-radius: .5rem;
+                background: $white;
+                color: $black;
+                font-size: 1.5rem;
+                padding: 0 .5rem;
+                transition: 0.4s;
+                i{
+                    padding-right: .5rem;
+                    color: $green;
+                }
 
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .content{
+            padding: 1.5rem 2rem;
+            background: $light-bg;
+
+            .tags{
+                padding-bottom: 1rem;
+                
+                
+                a{
+                    font-size: 1.5rem;
+                    color: $light-color;
+                    i{
+                        color:$green;
+                    }
+                }
+            }
+            h3{
+                font-size: 2rem;
+                color: $black;
+            }
+            p{
+                font-size: 1.4rem;
+                color: $light-color;
+                padding: 1rem;
+                line-height: 2;
+            }
+        }
+    }
+}
 
 
 
@@ -674,11 +802,11 @@ section{
         top: 0; 
         right: 0;
         width: 130%;
-        
-        
-        
     }
     
+    .order form .flex .inputBox{
+        width: 100%;
+    }
 }
 
 
