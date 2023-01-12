@@ -40,6 +40,9 @@ document.querySelector('#menu-btn').onclick = () => {
 }
 window.onscroll = () => {
     navbar.classList.remove('active');
+    cart.classList.remove('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
 }
 
 document.querySelector('.home').onmousemove = (e) => {
