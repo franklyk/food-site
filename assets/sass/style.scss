@@ -584,7 +584,39 @@ section{
     }
 }
 
+.menu .box-container{
+    @include grid(30rem);
+    .box{
+        border-radius: .5rem;
+        background: $light-bg;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        &:hover{
+            background: $green;
+            h3{
+                color: $white;
+            }
+            .price{
+                color: $white;
+            }
+        }
+        img{
+            height: 10rem;
+        }
+        h3{
+            font-size: 2rem;
+            color: $black;
+            padding-bottom: .5rem;
+        }
+        .price{
+            font-size: 1.8rem;
+            color: $green;
 
+        }
+    }
+}
 
 
 
@@ -609,6 +641,7 @@ section{
         font-size: 55%;       
     }
     .header{
+
         padding: 2rem;
     }
     section{
